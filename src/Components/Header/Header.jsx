@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Header = () => {
   return (
     <>
@@ -9,21 +11,19 @@ const Header = () => {
       </label>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
       <li><a>Home</a></li>
-      <li><a>Services</a></li>
-      <li><a>Pricing</a></li>
-      <li><a>Testimonials</a></li>
-      <li><a>Blog</a></li>
+      <li><a href="/price" >Price</a></li>
+      <li><a href="/target" >Target</a></li>
+      <li><a href="/blogs" >Blogs</a></li>
       </ul>
     </div>
     {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-      <li><a>Services</a></li>
-      <li><a>Pricing</a></li>
-      <li><a>Testimonials</a></li>
-      <li><a>Blog</a></li>
+      <li> <Link to={'/'} >Home</Link> </li>
+      <li> <Link to={'/price'} >Price</Link> </li>
+      <li> <Link to={'/target'} >Target</Link> </li>
+      <li> <Link to={'/blogs'} >Blogs</Link> </li>
     </ul>
   </div>
   <div className="navbar-end">

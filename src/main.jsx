@@ -10,20 +10,23 @@ import Target from "./Components/Target/Target.jsx";
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home/>
+    element: <Home/>,
+    children: [
+      {
+        path: '/price',
+        element: <Price/>
+      },
+      {
+        path: '/target',
+        element: <Target/>
+      },
+      {
+        path: '/blogs',
+        element: <Blogs/>
+      }
+    ]
   },
-  {
-    path: '/price',
-    element: <Price/>
-  },
-  {
-    path: '/blogs',
-    element: <Blogs/>
-  },
-  {
-    path: '/targer',
-    element: <Target/>
-  }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
