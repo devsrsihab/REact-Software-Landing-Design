@@ -1,0 +1,50 @@
+[
+  {
+    "title": "10 Tips for Productive Remote Work",
+    "description": "Discover the best practices for staying productive while working from home.",
+    "thumbnail": "https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-03.jpg",
+    "date": "Jul 18, 2023",
+    "username": "John Smith",
+    "userphoto": "https://example.com/user1.jpg"
+  },
+  {
+    "title": "The Art of Mindful Eating",
+    "description": "Learn how to savor each bite and make healthier food choices.",
+    "thumbnail": "https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-02.jpg",
+    "date": "Sep 05, 2023",
+    "username": "Jane Doe",
+    "userphoto": "https://example.com/user2.jpg"
+  },
+  {
+    "title": "Exploring Hidden Gems in Paris",
+    "description": "Uncover the lesser-known attractions that make Paris truly magical.",
+    "thumbnail": "https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-01.jpg",
+    "date": "Dec 01, 2023",
+    "username": "David Johnson",
+    "userphoto": "https://example.com/user3.jpg"
+  },
+  {
+    "title": "Mastering the Art of Photography",
+    "description": "Tips and techniques to capture stunning photos with your camera.",
+    "thumbnail": "https://i.ibb.co/VQkvwyy/we-development.jpg",
+    "date": "Aug 21, 2023",
+    "username": "Michael Brown",
+    "userphoto": "https://example.com/user4.jpg"
+  },
+  {
+    "title": "Healthy Habits for a Balanced Life",
+    "description": "Discover simple habits that lead to a happier, more balanced life.",
+    "thumbnail": "https://i.ibb.co/88L1tkV/python.jpg",
+    "date": "Oct 30, 2023",
+    "username": "Christopher Davis",
+    "userphoto": "https://example.com/user5.jpg"
+  },
+  {
+    "title": "DIY Home Decor: Creative Ideas",
+    "description": "Transform your living space with these easy and creative DIY decor projects.",
+    "thumbnail": "https://i.ibb.co/6WPdZc5/data-science.jpg",
+    "date": "Jun 15, 2023",
+    "username": "Andrew Wilson",
+    "userphoto": "https://example.com/user6.jpg"
+  }
+]

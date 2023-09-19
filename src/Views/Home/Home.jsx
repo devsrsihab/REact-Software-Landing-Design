@@ -1,21 +1,21 @@
-import Banner from "../../Components/Banner/Banner"
-// import Feature from "../../Components/Feature/Feature"
-// import News from "../../Components/News/News"
-// import Price from "../../Components/Price/Price"
-// import Review from "../../Components/Review/Review"
-// import Target from "../../Components/Target/Target"
+import Banner from "../../Components/Banner/Banner";
+import Price from "../../Components/Price/Price";
+import Blogs from "../../Components/Blogs/Blogs";
+import Target from "../../Components/Target/Target";
+import Footer from "../../Components/Footer/Footer";
+import Header from "../../Components/Header/Header";
 
 const Home = () => {
   return (
     <>
-    <Banner></Banner>
-    {/* <Target></Target>
-    <Feature></Feature>
-    <Price></Price>
-    <Review></Review>
-    <News></News> */}
+      <Header></Header>
+      <Banner></Banner>
+      <Target></Target>
+      <Price></Price>
+      <Blogs></Blogs>
+      <Footer></Footer>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
