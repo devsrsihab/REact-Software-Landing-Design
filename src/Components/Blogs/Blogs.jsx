@@ -1,5 +1,5 @@
-import { useEffect,useState } from "react"
-import axios from 'axios';
+// import { useEffect,useState } from "react"
+// import axios from 'axios';
 import Blog from "./Blog";
 import { useLoaderData } from "react-router-dom";
 const Blogs = () => {

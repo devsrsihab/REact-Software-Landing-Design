@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom"
+
 const Blog = ({blog}) => {
-    const {title,description,thumbnail,date} = blog
+    const {id,title,description,thumbnail,date} = blog
   return (
     <>
    <div className="blog-item w-full px-4 md:w-1/2 lg:w-1/3">
@@ -16,12 +18,13 @@ const Blog = ({blog}) => {
               {date}
             </span>
             <h3>
-              <a
-                href="javascript:void(0)"
+              <Link
+                to={`/blog/${id}`}
                 className="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
               >
                {title}
-              </a>
+              </Link>
+              
             </h3>
             <p className="text-body-color text-base">
               {description}
