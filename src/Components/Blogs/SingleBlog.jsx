@@ -1,15 +1,23 @@
-import { useLoaderData } from "react-router-dom"
+import { useLoaderData, useNavigate, useParams } from "react-router-dom"
 
 const SingleBlog = () => {
+  const params = useParams()
+  console.log(params.id);
 
   const blog = useLoaderData()
   const {thumbnail,title,description,date,username,userphoto} = blog
+  const navigat = useNavigate()
+  const handleNavigate  = () => {
+    navigat(-1)
+  }
 
   return (
    <>
        <section className="bg-white dark:bg-gray-900">
   <div className="container px-6 py-10 mx-auto">
-
+  <button onClick={handleNavigate} className="btn btn-error mt-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
+              Go Back
+            </button>
     <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
       <img
         className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96"

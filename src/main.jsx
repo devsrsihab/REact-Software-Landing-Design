@@ -8,10 +8,12 @@ import Price from "./Components/Price/Price.jsx";
 import Blogs from "./Components/Blogs/Blogs.jsx";
 import Target from "./Components/Target/Target.jsx";
 import SingleBlog from "./Components/Blogs/SingleBlog";
+import NotFound from "./Components/NotFound/NotFound";
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home/>,
+    errorElement: <NotFound/> ,
     children: [
       {
         path: '/price',

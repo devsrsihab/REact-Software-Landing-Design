@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Blog = ({blog}) => {
     const {id,title,description,thumbnail,date} = blog
+    const navigate = useNavigate()
+    const handleNavigate = ()=> {
+      navigate(`/blog/${id}`)
+    }
   return (
     <>
    <div className="blog-item w-full px-4 md:w-1/2 lg:w-1/3">
@@ -29,6 +33,9 @@ const Blog = ({blog}) => {
             <p className="text-body-color text-base">
               {description}
             </p>
+            <button onClick={handleNavigate} className="bg-secondary mt-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
+              See Details
+            </button>
           </div>
         </div>
       </div>
