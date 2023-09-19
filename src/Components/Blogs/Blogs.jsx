@@ -9,7 +9,7 @@ const Blogs = () => {
   useEffect(()=>{
      const getBlogs = async () => {
       try {
-        const request = await axios.get('./Api/Blogs.json')
+        const request = await axios.get('http://localhost:3004/blogs')
         setBlogs(request.data)
         
       } catch (err) {
