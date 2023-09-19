@@ -1,6 +1,10 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Header = () => {
+  const activeStyle = {
+    backgroundColor:"white",
+    color: "black"
+  }
   return (
     <>
     <div className="navbar bg-base-100">
@@ -20,10 +24,12 @@ const Header = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li> <Link to={'/'} >Home</Link> </li>
-      <li> <Link to={'/price'} >Price</Link> </li>
-      <li> <Link to={'/target'} >Target</Link> </li>
-      <li> <Link to={'/blogs'} >Blogs</Link> </li>
+      <li> <NavLink to={'/'} >Home</NavLink> </li>
+      <li> <NavLink to={'/banner'} >Banner</NavLink> </li>
+      <li> <NavLink to={'/price'} >Price</NavLink> </li>
+      <li> <NavLink to={'/target'} >Target</NavLink> </li>
+      <li> <NavLink to={'/blogs'} >Blogs</NavLink> </li>
+      
     </ul>
   </div>
   <div className="navbar-end">

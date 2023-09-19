@@ -14,7 +14,7 @@ const Blogs = () => {
     <div className="-mx-4 flex flex-wrap">
 
       {
-        blogs.map((blog,index) => <Blog blog={blog}  key={index} /> )
+       blogs ? blogs.map((blog,index) => <Blog blog={blog}  key={index} /> ) : 'no data'
       }
 
    

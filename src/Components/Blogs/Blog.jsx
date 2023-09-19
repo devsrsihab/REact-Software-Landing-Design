@@ -11,11 +11,13 @@ const Blog = ({blog}) => {
    <div className="blog-item w-full px-4 md:w-1/2 lg:w-1/3">
         <div className="mx-auto mb-10 max-w-[370px]">
           <div className="mb-8 overflow-hidden rounded">
+            <Link to={`/blog/${id}`} >
             <img
               src={thumbnail}
               alt="image"
               className="w-full"
             />
+            </Link>
           </div>
           <div>
             <span className="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">

@@ -8,34 +8,39 @@ import Price from "./Components/Price/Price.jsx";
 import Blogs from "./Components/Blogs/Blogs.jsx";
 import Target from "./Components/Target/Target.jsx";
 import SingleBlog from "./Components/Blogs/SingleBlog";
+import Banner from "./Components/Banner/Banner";
 import NotFound from "./Components/NotFound/NotFound";
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home/>,
-    errorElement: <NotFound/> ,
+    path: "/",
+    element: <Home />,
+    errorElement: <NotFound />,
     children: [
       {
-        path: '/price',
-        element: <Price/>
+        path: "/price",
+        element: <Price />,
       },
       {
-        path: '/target',
-        element: <Target/>
+        path: "/banner",
+        element: <Banner />,
       },
       {
-        path: '/blogs',
-        loader: ()=> fetch('http://localhost:3004/blogs')  ,
-        element: <Blogs/>
+        path: "/target",
+        element: <Target />,
       },
       {
-        path: 'blog/:id' ,
-        loader: ({params})=> fetch(`http://localhost:3004/blogs/${params.id}`) ,
-        element: <SingleBlog/>
-      }
-    ]
+        path: "/blogs",
+        loader: () => fetch("http://localhost:3004/blogs"),
+        element: <Blogs />,
+      },
+      {
+        path: "blog/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:3004/blogs/${params.id}`),
+        element: <SingleBlog />,
+      },
+    ],
   },
-
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

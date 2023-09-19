@@ -4,13 +4,20 @@
 // import Target from "../../Components/Target/Target";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
+
 
 const Home = () => {
+  const navigationi = useNavigation()
+
   return (
     <>
       <Header></Header>
-      <Outlet/>
+      {
+        navigationi.state === 'loading' ? 
+        <h2 className="text-5xl text-red-500" >loading.....</h2> 
+        : <Outlet/>
+      }
       <Footer></Footer>
     </>
   );
