@@ -1,25 +1,10 @@
 import { useEffect,useState } from "react"
 import axios from 'axios';
 import Blog from "./Blog";
+import { useLoaderData } from "react-router-dom";
 const Blogs = () => {
 
-  // define a state
-  const [blogs, setBlogs] = useState([])
-  // define a useeffect
-  useEffect(()=>{
-     const getBlogs = async () => {
-      try {
-        const request = await axios.get('http://localhost:3004/blogs')
-        setBlogs(request.data)
-        
-      } catch (err) {
-        console.error(err);
-      }
-     }
-     getBlogs()
-
-  },[])
-
+  const blogs = useLoaderData()
 
   return (
     <>
